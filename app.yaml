@@ -1,0 +1,20 @@
+application: samfellerpersonal
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+
+- url: /images
+  static_dir: images
+  
+- url: /css
+  static_dir: css
+
+- url: /.*
+  script: samfellerpersonal.app
+  
+libraries:
+- name: jinja2
+  version: latest
