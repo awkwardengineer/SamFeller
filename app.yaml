@@ -11,6 +11,9 @@ handlers:
   
 - url: /css
   static_dir: css
+  
+- url: /scripts
+  static_dir: scripts
 
 - url: /.*
   script: samfellerpersonal.app
